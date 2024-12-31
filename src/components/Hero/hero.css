@@ -1,0 +1,157 @@
+.BlackBackground {
+  background-color: var(--primary-font-color);
+  width: 1802.3px;
+  height: 1373.99px;
+  position: absolute;
+  top: -200px;
+  left: 900px;
+  rotate: 9.67deg;
+  z-index: -2;
+}
+
+p {
+  margin: 0;
+}
+
+.TitleIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 900px;
+  max-height: 900px;
+  position: relative;
+  top: 356px;
+  left: 150px;
+}
+
+.intro {
+  max-width: 171px;
+  max-height: 58px;
+  position: relative;
+  font-family: "Raleway", serif;
+  color: var(--primary-font-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+}
+
+.name {
+  max-width: 832px;
+  max-height: 105px;
+  position: relative;
+  font-family: "Raleway", serif;
+  color: var(--primary-font-color);
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 93.92px;
+}
+
+.role {
+  max-width: 426px;
+  max-height: 40px;
+  font-family: "Raleway", serif;
+  color: #909090;
+  position: relative;
+  top: -72px;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 29.35px;
+}
+
+.iconbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 235px;
+  max-height: 61px;
+  position: relative;
+  top: 356px;
+  left: 150px;
+}
+
+.iconbtn > button {
+  max-width: 61px;
+  max-height: 56px;
+  background: #c4c4c4;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  cursor: pointer;
+  padding: 12px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailicon {
+  width: 37px;
+  height: 35.5px;
+}
+
+.githubicon {
+  width: 34.96px;
+  height: 34.04px;
+}
+.linkedinicon {
+  width: 38.4px;
+  height: 38.4px;
+}
+.HeroFooter {
+  background: linear-gradient(
+    90.18deg,
+    #1d1d1d 31.74%,
+    #1d1d1d 90.49%,
+    #1d1d1d 90.49%
+  );
+  display: flex;
+  flex-direction: column;
+  min-width: 1920px;
+  min-height: 313px;
+  gap: 26px;
+  position: relative;
+  top: 500px;
+}
+
+.Objective > p {
+  font-family: "Montserrat", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+  letter-spacing: 0.1854em;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  left: 50px;
+}
+
+.ObjectiveInfo > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1148px;
+  height: 89px;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: justify;
+  position: relative;
+  top: 40px;
+  left: 50px;
+}
+
+.ReadMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 32px;
+  position: relative;
+  top: 40px;
+  left: 50px;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  cursor: pointer;
+}

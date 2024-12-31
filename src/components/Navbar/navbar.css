@@ -1,0 +1,39 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  max-width: 637px;
+  max-height: 46px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 65px;
+  left: 991px;
+}
+
+button {
+  font-family: "Montserrat", serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.btn > button {
+  max-width: 147px;
+  max-height: 46px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.72px;
+  text-align: center;
+}
+
+.contactme > button {
+  background-color: var(--secondary-font-color);
+  color: var(--primary-font-color);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  width: 147px;
+  height: 46px;
+  border-radius: 30px;
+  border: 4px; 
+}
