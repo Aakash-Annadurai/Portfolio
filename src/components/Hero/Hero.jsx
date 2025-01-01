@@ -11,7 +11,9 @@ export default function Hero() {
   return (
     <div className="Hero">
       <Navbar />
-      <div className="BlackBackground"></div>
+      <div className="BlackBackground">
+        <img src="" alt="" />
+      </div>
       <div className="TitleIntro">
         <p className="intro">Hi, I am</p>
         <p className="name">Aakash Annadurai</p>

@@ -1,12 +1,17 @@
 .BlackBackground {
   background-color: var(--primary-font-color);
-  width: 1802.3px;
-  height: 1373.99px;
-  position: absolute;
+  width: 60%;
+  height: 95%;
+  position: fixed;
   top: -200px;
   left: 900px;
-  rotate: 9.67deg;
+  transform: skewX(-9.67deg);
   z-index: -2;
+}
+
+.Hero{
+  min-width: 100vb;
+  min-height: 100vh;
 }
 
 p {
@@ -120,6 +125,8 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 363px;
+  height: 63px;
   top: 40px;
   left: 50px;
 }
