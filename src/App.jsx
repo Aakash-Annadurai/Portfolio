@@ -1,3 +1,4 @@
+import Aboutme from "./components/About Me/Aboutme"
 import Hero from "./components/Hero/Hero"
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Hero />
+      <Aboutme />
     </>
   )
 }

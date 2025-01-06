@@ -1,13 +1,13 @@
-.BlackBackground {
+/* .BlackBackground {
   background-color: var(--primary-font-color);
   width: 60%;
   height: 95%;
-  position: fixed;
+  position:fixed;
   top: -200px;
   left: 900px;
   transform: skewX(-9.67deg);
   z-index: -2;
-}
+} */
 
 .Hero{
   min-width: 100vb;

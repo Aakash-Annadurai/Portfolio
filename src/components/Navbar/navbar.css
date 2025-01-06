@@ -8,6 +8,26 @@
   position: relative;
   top: 65px;
   left: 991px;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.Navbar.sticky {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 75px;
+  width: 100%;
+  max-height: none;
+  max-width: none;
+  z-index: 1000;
+  background-color: black;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 80px;
+  padding-right: 100px;
+  box-sizing: border-box;
 }
 
 button {
