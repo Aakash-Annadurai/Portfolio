@@ -1,0 +1,109 @@
+.Portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 800px;
+  background: #1a1a1a;
+  z-index: 1px;
+  background-image: url(./assets/portfoliobg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.32);
+  padding-top: 80px;
+}
+
+.header > p {
+  margin: 0;
+  width: 404px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-font-color);
+}
+
+.header {
+  width: 482px;
+  height: 107px;
+  border: 8px solid #000000;
+  font-family: "Montserrat", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.37px;
+  letter-spacing: 0.3554em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.box {
+  width: 149px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.indicatorline {
+  width: 221px;
+  border: 1px solid #ffffff;
+  position: relative;
+  top: 79.5px;
+}
+
+.filterbar {
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  max-height: 112px;
+  max-width: none;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 587px;
+  height: 48px;
+  position: relative;
+  top: 80px;
+}
+
+.project > img {
+  width: 640px;
+  height: 401px;
+}
+
+.projectgrid {
+  z-index: -1px;
+  box-sizing: border-box;
+  padding-top: 120px;
+  background: #1a1a1a;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.portfoliofooter {
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 68px;
+  font-family: "Montserrat", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
