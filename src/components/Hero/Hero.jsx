@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import email from "./assets/EmailVector.png";
 import github from "./assets/GitHubVector.png";
 import linkedin from "./assets/LinkedinVector.png";
-
+import blackbg from './assets/Rectanglebg.svg'
 import "./hero.css";
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
     <div className="Hero">
       <Navbar />
       <div className="BlackBackground">
-        <img src="" alt="" />
+        <img src={blackbg} alt="" />
       </div>
       <div className="TitleIntro">
         <p className="intro">Hi, I am</p>
@@ -19,13 +19,21 @@ export default function Hero() {
         <p className="role">Front-end Developer</p>
       </div>
       <div className="iconbtn">
-        <button>
-          <img src={email} className="emailicon" alt="mail" />
-        </button>
-        <button onClick={() => window.open("https://github.com/Aakash-Annadurai", "_blank")}>
+        <button
+          onClick={() =>
+            window.open("https://github.com/Aakash-Annadurai", "_blank")
+          }
+        >
           <img src={github} className="githubicon" alt="github" />
         </button>
-        <button onClick={() => window.open("https://linkedin.com/in/aakash-annadurai-8516b5321", "_blank")}>
+        <button
+          onClick={() =>
+            window.open(
+              "https://linkedin.com/in/aakash-annadurai-8516b5321",
+              "_blank"
+            )
+          }
+        >
           <img src={linkedin} className="linkedinicon" alt="linkedin" />
         </button>
       </div>

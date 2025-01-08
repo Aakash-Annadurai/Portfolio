@@ -1,13 +1,9 @@
-/* .BlackBackground {
-  background-color: var(--primary-font-color);
-  width: 60%;
-  height: 95%;
-  position:fixed;
-  top: -200px;
-  left: 900px;
-  transform: skewX(-9.67deg);
+.BlackBackground {
+  position:absolute;
+  top: 0px;
+  left: 752px;
   z-index: -2;
-} */
+}
 
 .Hero{
   min-width: 100vb;
@@ -68,7 +64,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 235px;
+  max-width: 135px;
   max-height: 61px;
   position: relative;
   top: 356px;

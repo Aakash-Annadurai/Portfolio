@@ -36,7 +36,7 @@
 
 .infoaboutme {
   position: relative;
-  top: 40px;
+  top: -20px;
   width: 763px;
   height: 47px;
   font-family: "Open Sans", serif;
@@ -51,7 +51,7 @@
   width: 139px;
   height: 32px;
   position: relative;
-  top: 157px;
+  top: 57px;
   font-family: "Montserrat", serif;
   font-size: 15px;
   font-weight: 600;
@@ -67,12 +67,12 @@
 
 .separator1 {
   position: relative;
-  top: 250px;
+  top: 100px;
 }
 
 .services {
   position: relative;
-  top: 308px;
+  top: 208px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,7 +208,7 @@
 
 .separator2 {
   position: relative;
-  top: 400px;
+  top: 350px;
 }
 
 .Skills {
