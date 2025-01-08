@@ -20,6 +20,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: row;
-  min-width: 100vb;
-  min-height: 100vh;
+  min-width: 100dvb;
+  min-height: 100dvh;
 }

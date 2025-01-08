@@ -22,10 +22,10 @@ export default function Hero() {
         <button>
           <img src={email} className="emailicon" alt="mail" />
         </button>
-        <button>
+        <button onClick={() => window.open("https://github.com/Aakash-Annadurai", "_blank")}>
           <img src={github} className="githubicon" alt="github" />
         </button>
-        <button>
+        <button onClick={() => window.open("https://linkedin.com/in/aakash-annadurai-8516b5321", "_blank")}>
           <img src={linkedin} className="linkedinicon" alt="linkedin" />
         </button>
       </div>

@@ -18,7 +18,7 @@ import typescript from "./assets/typescript.png"
 export default function Aboutme() {
   return (
     <>
-    <div className="Aboutme">
+    <div className="Aboutme" id="aboutMe">
       <div className="header">
         <p>ABOUT ME</p>
       </div>
@@ -63,7 +63,7 @@ export default function Aboutme() {
       </div>
       <img src={separator} alt="separator" className="separator2" />
     </div>
-    <div className="Skills">
+    <div className="Skills" id="skills">
         <div className="header">
             <p>SKILLS</p>
         </div>

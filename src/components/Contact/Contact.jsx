@@ -5,7 +5,7 @@ import separator from './assets/separator.png'
 export default function Contact() {
   return (
     <>
-      <div className="Contact">
+      <div className="Contact" id="contactMe">
         <div className="header">
           <p>CONTACT</p>
         </div>

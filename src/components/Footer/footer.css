@@ -1,0 +1,34 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 1050px;
+  background-color: #1a1a1a;
+  gap: 57px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.backtotop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.29px;
+  letter-spacing: 0.1854em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contacticons{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
