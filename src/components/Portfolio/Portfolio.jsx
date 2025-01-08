@@ -12,15 +12,15 @@ export default function Portfolio() {
   
 
   const imagesData = [
-    { id: 1, src: project1, description: "APOD" },
-    { id: 2, src: project2, description: "Blog Preview" },
-    { id: 3, src: project3, description: "Dog API Demo" },
-    { id: 4, src: project4, description: "Demo Recipe Page" },
-    { id: 5, src: project5, description: "Table Records" },
-    { id: 6, src: project6, description: "To-Do List" },
+    { id: 1, src: project1, description: "APOD", link:"https://apod-boqk.onrender.com" },
+    { id: 2, src: project2, description: "Blog Preview", link:"https://aakash-annadurai.github.io/Blog-Preview-Card/" },
+    { id: 3, src: project3, description: "Dog API Demo", link:"https://dog-api-demo.onrender.com" },
+    { id: 4, src: project4, description: "Demo Recipe Page", link:"https://aakash-annadurai.github.io/Recipe-Page/" },
+    { id: 5, src: project5, description: "Table Records", link:"https://table-records.onrender.com" },
+    { id: 6, src: project6, description: "To-Do List", link:"https://to-do-list-rvb1.onrender.com" },
   ];
 
-  const HoverImage = ({imageSrc, description}) => {
+  const HoverImage = ({imageSrc, description, linksrc}) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
       <div
@@ -28,7 +28,7 @@ export default function Portfolio() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img src={imageSrc} alt="project" className="image" />
+        <img src={imageSrc} alt="project" className="image" onClick={() => window.open({linksrc}, "_blank")}/>
         {isHovered && <div className="hover-text">{description}</div>}
       </div>
     );
@@ -50,6 +50,7 @@ export default function Portfolio() {
               key={image.id}
               imageSrc={image.src}
               description={image.description}
+              linksrc={image.link}
             />
           ))}
         </div>
