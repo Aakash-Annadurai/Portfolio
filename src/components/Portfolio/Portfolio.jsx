@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./portfolio.css";
 import { useState } from "react";
 import project1 from "./assets/apodproject.png";
@@ -7,8 +7,10 @@ import project3 from "./assets/dogapiproject.png";
 import project4 from "./assets/recipeproject.png";
 import project5 from "./assets/tableproject.png";
 import project6 from "./assets/todoproject.png";
+import { FunctionContext } from "../../utils/FunctionProvider";
 
 export default function Portfolio() {
+  const { t } = useContext(FunctionContext);
   const imagesData = [
     {
       id: 1,
@@ -70,11 +72,11 @@ export default function Portfolio() {
     <>
       <div className="Portfolio" id="portfolio">
         <div className="header">
-          <p>PORTFOLIO</p>
+          <p>{t("portfoliotitle")}</p>
         </div>
         <div className="filterbar">
           <div className="all box">
-            <p>ALL</p>
+            <p>{t("filterboxall")}</p>
           </div>
         </div>
         <div className="projectgrid">
@@ -88,7 +90,7 @@ export default function Portfolio() {
           ))}
         </div>
         <div className="portfoliofooter">
-          <p>And many more to come!</p>
+          <p>{t("portfoliofooter")}</p>
         </div>
       </div>
     </>

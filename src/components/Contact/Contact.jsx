@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./contact.css";
 import separator from "./assets/separator.png";
+import { FunctionContext } from "../../utils/FunctionProvider";
 
 export default function Contact() {
+  const { t } = useContext(FunctionContext);
   return (
     <>
       <div className="Contact" id="contactMe">
         <div className="header">
-          <p>CONTACT</p>
+          <p>{t("contacttitle")}</p>
         </div>
         <div className="contactinfo">
-          <p>"Let's Connect and Create Something Amazing Together!"</p>
+          <p>{t("contactinfo")}</p>
         </div>
         <img src={separator} alt="separator" />
         <form>
@@ -44,7 +46,7 @@ export default function Contact() {
               required
             />
           </div>
-          <button className="btn submit">SUBMIT</button>
+          <button className="btn submit">{t("submitbtn")}</button>
         </form>
       </div>
     </>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./footer.css";
 import doublearrow from "./assets/doublearrow.svg";
 import linkedin from "./assets/linkedin.svg";
 import instagram from "./assets/instagram.svg";
+import { FunctionContext } from "../../utils/FunctionProvider";
 
 export default function Footer() {
+  const { t } = useContext(FunctionContext);
   const backToTop = () => {
     window.scrollTo({
       top: 0,
@@ -16,7 +18,7 @@ export default function Footer() {
       <div className="Footer">
         <div className="backtotop" onClick={backToTop}>
           <img src={doublearrow} alt="arrow icon" />
-          <p>BACK TO TOP</p>
+          <p>{t("backtotopbtn")}</p>
         </div>
         <div className="contacticons">
           <button
@@ -32,16 +34,16 @@ export default function Footer() {
           <button
             onClick={() =>
               window.open(
-                "www.linkedin.com/in/aakash-annadurai-8516b5321",
+                "https://www.instagram.com/aakxshfr?igsh=MWFlM2lmd3lwdGw5cw==",
                 "_blank"
               )
             }
           >
             <img src={instagram} alt="instaicon" className="footericon" />
-          </button>{" "}
+          </button>
         </div>
         <div className="copyrights">
-          <p>@2020 Tomasz Gajda All Rights Reserved.</p>
+          <p>{t("copyrights")}</p>
         </div>
       </div>
     </>
