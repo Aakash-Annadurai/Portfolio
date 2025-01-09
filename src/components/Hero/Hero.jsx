@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import github from "./assets/GitHub.svg";
-import linkedin from "./assets/Linkedin.svg";
+import github from "./assets/gitHub.svg";
+import linkedin from "./assets/linkedin.svg";
 import "./hero.css";
 
 export default function Hero() {
