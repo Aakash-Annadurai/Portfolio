@@ -1,18 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import email from "./assets/EmailVector.png";
-import github from "./assets/GitHubVector.png";
-import linkedin from "./assets/LinkedinVector.png";
-import blackbg from './assets/Rectanglebg.svg'
+import github from "./assets/GitHub.svg";
+import linkedin from "./assets/Linkedin.svg";
 import "./hero.css";
 
 export default function Hero() {
   return (
     <div className="Hero">
       <Navbar />
-      <div className="BlackBackground">
-        <img src={blackbg} alt="" />
-      </div>
       <div className="TitleIntro">
         <p className="intro">Hi, I am</p>
         <p className="name">Aakash Annadurai</p>

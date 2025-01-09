@@ -25,8 +25,8 @@ export default function Aboutme() {
           <p>
             A self-taught and innovative professional with a passion for design
             and problem-solving. I specialize in front-end development and have
-            a some foundational understanding of back-end technologies, enabling me
-            to craft user-centric and impactful digital solutions.
+            a some foundational understanding of back-end technologies, enabling
+            me to craft user-centric and impactful digital solutions.
           </p>
         </div>
         <div className="explore">

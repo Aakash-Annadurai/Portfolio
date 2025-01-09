@@ -1,6 +1,6 @@
-import React from 'react'
-import "./navbar.css"
-import { useEffect, useState } from 'react';
+import React from "react";
+import "./navbar.css";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -31,14 +31,14 @@ export default function Navbar() {
         <button onClick={() => scrollScreenTo("aboutMe")}>About Me</button>
       </div>
       <div className="btn skills">
-      <button onClick={() => scrollScreenTo("skills")}>Skills</button>
+        <button onClick={() => scrollScreenTo("skills")}>Skills</button>
       </div>
       <div className="btn portfolio">
-      <button onClick={() => scrollScreenTo("portfolio")}>Portfolio</button>
+        <button onClick={() => scrollScreenTo("portfolio")}>Portfolio</button>
       </div>
       <div className="btn contactme">
-      <button onClick={() => scrollScreenTo("contactMe")}>CONTACT ME</button>
+        <button onClick={() => scrollScreenTo("contactMe")}>CONTACT ME</button>
       </div>
     </div>
-  )
+  );
 }

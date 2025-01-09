@@ -1,61 +1,62 @@
 .Aboutme {
   position: relative;
-  height: 1007px;
+  height: 93.47vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.52vw;
+  width: 100vw;
 }
 
 .header > p {
   margin: 0;
-  width: 404px;
-  height: 74px;
+  width: 21.04vw;
+  height: 6.85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--primary-font-color);
+  font-family: "Montserrat", serif;
+  font-size: 1.56vw;
+  font-weight: 700;
+  line-height: 3.55vh;
+  letter-spacing: 0.55vw;
 }
 
 .header {
-  width: 404px;
-  height: 107px;
-  border: 8px solid #000000;
-  font-family: "Montserrat", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 38.37px;
-  letter-spacing: 0.3554em;
+  width: 11.04vw;
+  height: 9.91vh;
+  border: 0.42vw solid #000000;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .infoaboutme {
   position: relative;
-  top: -20px;
-  width: 763px;
-  height: 47px;
+  top: 1.85vh;
+  width: 39.75vw;
+  height: 4.35vh;
   font-family: "Open Sans", serif;
-  font-size: 15px;
+  font-size: 0.78vw;
   font-weight: 400;
-  line-height: 20.8px;
+  line-height: 1.93vh;
   text-align: center;
   color: var(--primary-font-color);
 }
 
 .explore {
-  width: 139px;
-  height: 32px;
+  width: 7.24vw;
+  height: 2.96vh;
   position: relative;
-  top: 57px;
+  top: 5.28vh;
   font-family: "Montserrat", serif;
-  font-size: 15px;
+  font-size: 0.78vw;
   font-weight: 600;
-  line-height: 18.29px;
+  line-height: 1.69vh;
   text-align: center;
   color: var(--primary-font-color);
   border-left: 2px solid #000000;
@@ -67,148 +68,152 @@
 
 .separator1 {
   position: relative;
-  top: 100px;
+  top: 9.26vh;
+  width: 8.85vw;
+  height: 1.11vh;
 }
 
 .services {
   position: relative;
-  top: 208px;
+  top: 19.26vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--primary-font-color);
-  gap: 60px;
+  gap: 3.13vw;
 }
 
 .designanddevelopment {
   display: flex;
   flex-direction: row;
-  gap: 67px;
+  gap: 3.49vw;
 }
 
 .design {
-  width: 516px;
-  height: 177px;
+  width: 26.88vw;
+  height: 16.39vh;
   display: flex;
   flex-direction: column;
 }
 
 .design > img {
-  width: 61px;
-  height: 64px;
+  width: 3.17vw;
+  height: 5.93vh;
   display: flex;
   position: relative;
-  top: 45px;
-  left: 45px;
+  top: 3.17vh;
+  left: 2.34vw;
 }
 
 .design > .title {
-  width: 277px;
-  height: 74px;
+  width: 14.43vw;
+  height: 6.85vh;
   font-family: "Montserrat", serif;
-  font-size: 22px;
+  font-size: 1.15vw;
   font-weight: 700;
-  line-height: 26.82px;
-  letter-spacing: 0.1854em;
+  line-height: 2.48vh;
+  letter-spacing: 0.21vw;
   text-align: center;
 }
 
 .design > .info {
-  width: 431px;
-  height: 104px;
+  width: 22.47vw;
+  height: 9.63vh;
   font-family: "Open Sans", serif;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-weight: 300;
-  line-height: 19.07px;
+  line-height: 1.77vh;
   text-align: justify;
   position: relative;
-  top: 10px;
-  left: 80px;
+  top: 0.93vh;
+  left: 4.17vw;
 }
 
 .development {
-  width: 483px;
-  height: 178px;
+  width: 25.14vw;
+  height: 16.48vh;
   display: flex;
   flex-direction: column;
 }
 
 .development > img {
-  width: 68.94px;
-  height: 70px;
+  width: 3.59vw;
+  height: 6.48vh;
   display: flex;
   position: relative;
-  top: 45px;
-  left: -5px;
+  top: 3.24vh;
+  left: -0.26vw;
 }
 
 .development > .title {
-  width: 277px;
-  height: 74px;
+  width: 14.43vw;
+  height: 6.85vh;
   font-family: "Montserrat", serif;
-  font-size: 22px;
+  font-size: 1.15vw;
   font-weight: 700;
-  line-height: 26.82px;
-  letter-spacing: 0.1854em;
+  line-height: 2.48vh;
+  letter-spacing: 0.21vw;
   text-align: center;
 }
 
 .development > .info {
-  width: 431px;
-  height: 104px;
+  width: 22.47vw;
+  height: 9.63vh;
   font-family: "Open Sans", serif;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-weight: 300;
-  line-height: 19.07px;
+  line-height: 1.77vh;
   text-align: justify;
   position: relative;
-  top: 10px;
-  left: 25px;
+  top: 0.93vh;
+  left: 1.3vw;
 }
 
 .maintenance {
-  width: 487px;
-  height: 182px;
+  width: 25.37vw;
+  height: 16.85vh;
   display: flex;
   flex-direction: column;
 }
 
 .maintenance > img {
-  width: 80.21px;
-  height: 64px;
+  width: 4.18vw;
+  height: 5.93vh;
   display: flex;
   position: relative;
-  top: 35px;
-  left: -30px;
+  top: 3.24vh;
+  left: -1.56vw;
 }
 
 .maintenance > .title {
-  width: 277px;
-  height: 74px;
+  width: 14.43vw;
+  height: 6.85vh;
   font-family: "Montserrat", serif;
-  font-size: 22px;
+  font-size: 1.15vw;
   font-weight: 700;
-  line-height: 26.82px;
-  letter-spacing: 0.1854em;
+  line-height: 2.48vh;
+  letter-spacing: 0.21vw;
   text-align: center;
 }
 
 .maintenance > .info {
-  width: 422px;
-  height: 104px;
+  width: 21.99vw;
+  height: 9.63vh;
   font-family: "Open Sans", serif;
-  font-size: 14px;
+  font-size: 0.73vw;
   font-weight: 300;
-  line-height: 19.07px;
+  line-height: 1.77vh;
   text-align: justify;
   position: relative;
-  left: 30px;
+  left: 1.56vw;
 }
 
 .separator2 {
   position: relative;
-  top: 350px;
+  top: 32.41vh;
+  width: 8.85vw;
+  height: 1.11vh;
 }
 
 .Skills {
@@ -217,38 +222,39 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 400px;
-  gap: 30px;
+  top: 37.04vh;
+  gap: 5.78vh;
+  width: 100vw;
 }
 
 .skills > .header {
-  width: 404px;
-  height: 107px;
+  width: 21.04vw;
+  height: 9.91vh;
   font-family: "Montserrat", serif;
-  font-size: 30px;
+  font-size: 1.56vw;
   font-weight: 700;
-  line-height: 38.37px;
-  letter-spacing: 0.3554em;
+  line-height: 3.55vh;
+  letter-spacing: 0.55vw;
   text-align: center;
 }
 
 .skillsused {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 11.11vh;
 }
 
 .usingnow {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 8.26vh;
 }
 .usingnow > p {
   font-family: "Montserrat", serif;
-  font-size: 30px;
+  font-size: 1.56vw;
   font-weight: 700;
-  line-height: 36.57px;
-  letter-spacing: 0.1854em;
+  line-height: 3.39vh;
+  letter-spacing: 0.29vw;
   text-align: left;
   color: var(--primary-font-color);
 }
@@ -257,7 +263,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 125px;
+  gap: 6.51vw;
   justify-items: center;
   align-items: center;
 }
@@ -265,16 +271,16 @@
 .learning {
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  padding-bottom: 100px;
+  gap: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
 .learning > p {
   font-family: "Montserrat", serif;
-  font-size: 30px;
+  font-size: 1.56vw;
   font-weight: 700;
-  line-height: 36.57px;
-  letter-spacing: 0.1854em;
+  line-height: 3.39vh;
+  letter-spacing: 0.29vw;
   text-align: left;
   color: var(--primary-font-color);
 }
@@ -283,7 +289,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto);
-  gap: 125px;
+  gap: 6.51vw;
   justify-items: center;
   align-items: center;
 }
@@ -293,15 +299,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 17px;
+  gap: 0.89vw;
+}
+
+.logo > img {
+  width: 4vw;
 }
 
 .logo > p {
   font-family: "Montserrat", serif;
-  font-size: 24px;
+  font-size: 1.25vw;
   font-weight: 400;
-  line-height: 29.26px;
-  letter-spacing: 0.1354em;
+  line-height: 2.71vh;
+  letter-spacing: 0.17vw;
   text-align: center;
   color: var(--primary-font-color);
 }
