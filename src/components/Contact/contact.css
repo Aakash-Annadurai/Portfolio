@@ -1,0 +1,113 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 65.07vh;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.header {
+  width: 21.04vw;
+  height: 9.91vh;
+  border: 0.42vw solid #000000;
+  font-family: "Montserrat", serif;
+  font-size: 1.56vw;
+  font-weight: 700;
+  line-height: 3.56vh;
+  letter-spacing: 0.3vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.header > p {
+  width: 19.15vw;
+  height: 6.85vh;
+  margin: 0;
+}
+
+.contactinfo > p {
+  width: 39.78vw;
+  height: 6.67vh;
+  font-family: "Open Sans", serif;
+  font-size: 0.78vw;
+  font-weight: 400;
+  line-height: 1.93vh;
+  text-align: center;
+  color: var(--primary-font-color);
+  margin-top: 2vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputfields {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 9.26vh;
+  gap: 3.13vw;
+}
+
+input {
+  background: none;
+  border: none;
+  height: 4.44vh;
+  width: 31.67vw;
+  padding-left: 0.52vw;
+  color: #8b8b8b;
+  font-family: "Montserrat", serif;
+  font-size: 0.73vw;
+  font-weight: 700;
+  line-height: 1.58vh;
+  letter-spacing: 0.03vw;
+  text-align: left;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.inputmessage {
+  background: none;
+  border: none;
+  resize: none;
+  width: 31.67vw;
+  padding-top: 0.93vh;
+  padding-left: 0.52vw;
+  color: #8b8b8b;
+  font-family: "Montserrat", serif;
+  font-size: 0.73vw;
+  font-weight: 700;
+  line-height: 1.58vh;
+  letter-spacing: 0.03vw;
+  text-align: left;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  height: 17.04vh;
+}
+
+.btn.submit {
+  position: relative;
+  top: 16.67vh;
+  width: 10.26vw;
+  height: 4.17vh;
+  font-family: "Montserrat", serif;
+  font-size: 0.83vw;
+  font-weight: 700;
+  line-height: 1.81vh;
+  letter-spacing: 0.08vw;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  text-align: center;
+  color: var(--primary-font-color);
+  cursor: pointer;
+}

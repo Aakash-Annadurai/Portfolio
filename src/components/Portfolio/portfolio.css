@@ -1,0 +1,146 @@
+.Portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 45.56vh;
+  background: #1a1a1a;
+  z-index: 1px;
+  background-image: url(./assets/portfoliobg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.32);
+  padding-top: 7.41vh;
+  width: 100vw;
+}
+
+.header > p {
+  margin: 0;
+  width: 21.08vw;
+  height: 6.85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-font-color);
+  font-size: 1.56vw;
+  font-weight: 700;
+  line-height: 3.56vh;
+  letter-spacing: 0.55vw;
+  font-family: "Montserrat", serif;
+  text-align: center;
+}
+
+.header {
+  width: 25.1vw;
+  height: 9.91vh;
+  border: 0.42vw solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.box {
+  width: 7.77vw;
+  height: 4.44vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 1.04vw;
+  font-weight: 600;
+  line-height: 2.26vh;
+}
+
+.indicatorline {
+  width: 11.52vw;
+  border: 1px solid #ffffff;
+  position: relative;
+  top: 7.38vh;
+  z-index: 1;
+}
+
+.projectgrid {
+  z-index: -1px;
+  box-sizing: border-box;
+  padding-top: 11.11vh;
+  background: #1a1a1a;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 100vw;
+}
+.image-container {
+  width: 33.33vw;
+  height: 37.04vh;
+}
+
+.image-container img:hover {
+  opacity: 0.6;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.image-container > img {
+  width: 33.33vw;
+  height: 37.04vh;
+  display: inline-block;
+  position: relative;
+  object-fit: cover;
+}
+
+.hover-text {
+  position: relative;
+  top: -20vh;
+  width: fit-content;
+  left: 12vw;
+  right: 0;
+  bottom: 0;
+  text-shadow: 0 0 4px #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.04vw;
+  font-weight: 600;
+  font-family: "Montserrat", serif;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.filterbar {
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  gap: 1.77vw;
+  height: 10.37vh;
+  width: 100vw;
+  font-family: "Montserrat", serif;
+  font-size: 0.73vw;
+  font-weight: 600;
+  line-height: 1.58vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10.41vh;
+  z-index: 1;
+}
+
+.portfoliofooter {
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 6.3vh;
+  font-family: "Montserrat", serif;
+  font-size: 1.04vw;
+  font-weight: 600;
+  line-height: 2.26vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
