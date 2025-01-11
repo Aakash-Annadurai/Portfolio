@@ -1,10 +1,46 @@
 import React, { useContext } from "react";
 import "./contact.css";
 import separator from "./assets/separator.png";
+import Swal from "sweetalert2";
 import { FunctionContext } from "../../utils/FunctionProvider";
 
 export default function Contact() {
   const { t } = useContext(FunctionContext);
+
+export default function Contact() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
+
+    formData.append("access_key", ACCESS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Form sent successfully!",
+        icon: "success",
+        confirmButtonColor: "#1a1a1a",
+      });
+      event.target.reset();
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!, Try again.",
+        confirmButtonColor: "#1a1a1a",
+      });
+    }
+  };
+
   return (
     <>
       <div className="Contact" id="contactMe">
@@ -15,7 +51,7 @@ export default function Contact() {
           <p>{t("contactinfo")}</p>
         </div>
         <img src={separator} alt="separator" />
-        <form>
+        <form onSubmit={onSubmit}>
           <div className="inputfields">
             <input
               type="text"
@@ -46,7 +82,7 @@ export default function Contact() {
               required
             />
           </div>
-          <button className="btn submit">{t("submitbtn")}</button>
+          <button className="btn submit" type="submit">{t("submitbtn")}</button>
         </form>
       </div>
     </>
