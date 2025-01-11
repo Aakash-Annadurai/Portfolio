@@ -1,13 +1,13 @@
 .Navbar {
   display: flex;
   flex-direction: row;
-  width: 33.2vw;
+  width: 46.2vw;
   height: 4.26vh;
-  justify-content: space-between;
   align-items: center;
   position: relative;
+  gap: 1.8vw;
   top: 6.02vh;
-  left: 58vw;
+  left: 52vw;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
 }
@@ -37,14 +37,17 @@ button {
   cursor: pointer;
   box-sizing: border-box;
   color: var(--secondary-font-color);
+  justify-content: center;
 }
 .btn > button {
-  width: 7.66vw;
+  width: 8.66vw;
   height: 4.26vh;
   font-size: 0.89vw;
   font-weight: 700;
   line-height: 1.92vh;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactme > button {
@@ -58,3 +61,19 @@ button {
   border-radius: 1.56vw;
   border: 0.21vw;
 }
+
+.dropdown > select{
+  font-family: "Montserrat", serif;
+  background-color: var(--secondary-font-color);
+  color: var(--primary-font-color);
+  font-size: 0.78vw;
+  font-weight: 700;
+  line-height: 1.69vh;
+  width: 4.66vw;
+  height: 4.26vh;
+  border-radius: 1.56vw;
+  border: 0.21vw;
+  text-align: center;
+  cursor: pointer;
+}
+

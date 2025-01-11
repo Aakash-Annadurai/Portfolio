@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./contact.css";
 import separator from "./assets/separator.png";
 import Swal from "sweetalert2";
+import { FunctionContext } from "../../utils/FunctionProvider";
+
+export default function Contact() {
+  const { t } = useContext(FunctionContext);
 
 export default function Contact() {
   const onSubmit = async (event) => {
@@ -41,10 +45,10 @@ export default function Contact() {
     <>
       <div className="Contact" id="contactMe">
         <div className="header">
-          <p>CONTACT</p>
+          <p>{t("contacttitle")}</p>
         </div>
         <div className="contactinfo">
-          <p>"Let's Connect and Create Something Amazing Together!"</p>
+          <p>{t("contactinfo")}</p>
         </div>
         <img src={separator} alt="separator" />
         <form onSubmit={onSubmit}>
@@ -52,35 +56,33 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              placeholder="ENTER YOUR NAME*"
+              placeholder={t("inputname")}
               className="inputname"
               required
             />
             <input
               type="email"
               name="email"
-              placeholder="ENTER YOUR EMAIL*"
+              placeholder={t("inputemail")}
               className="inputemail"
               required
             />
             <input
               type="number"
               name="phone number"
-              placeholder="PHONE NUMBER"
+              placeholder={t("inputnumber")}
               className="inputphonenumber"
               required
             />
             <textarea
               type="text"
               name="message"
-              placeholder="YOUR MESSAGE*"
+              placeholder={t("inputmessage")}
               className="inputmessage"
               required
             />
           </div>
-          <button className="btn submit" type="submit">
-            SUBMIT
-          </button>
+          <button className="btn submit" type="submit">{t("submitbtn")}</button>
         </form>
       </div>
     </>
