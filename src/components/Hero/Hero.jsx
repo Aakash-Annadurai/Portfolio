@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FunctionContext } from "../../utils/FunctionProvider";
 import Navbar from "../Navbar/Navbar";
-import github from "./assets/gitHub.svg";
+import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
 import "./hero.css";
 
