@@ -40,5 +40,15 @@
   "contactinfo": "Let's Connect and Create Something Amazing Together!",
   "submitbtn": "SUBMIT",
   "backtotopbtn": "BACK TO TOP",
-  "copyrights": "@2020 Tomasz Gajda All Rights Reserved."
+  "copyrights": "@2020 Tomasz Gajda All Rights Reserved.",
+  "inputname":"ENTER YOUR NAME",
+  "inputemail":"ENTER YOUR EMAIL",
+  "inputnumber":"PHONE NUMBER",
+  "inputmessage":"YOUR MESSAGE",
+  "apod":"APOD",
+  "blog":"Blog Preview",
+  "dogapi":"Dog API Demo",
+  "recipe":"Recipe Page",
+  "table":"Table Records",
+  "todo":"To-Do List"
 }

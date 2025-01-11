@@ -20,28 +20,28 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              placeholder="ENTER YOUR NAME*"
+              placeholder={t("inputname")}
               className="inputname"
               required
             />
             <input
               type="email"
               name="email"
-              placeholder="ENTER YOUR EMAIL*"
+              placeholder={t("inputemail")}
               className="inputemail"
               required
             />
             <input
               type="number"
               name="phone number"
-              placeholder="PHONE NUMBER"
+              placeholder={t("inputnumber")}
               className="inputphonenumber"
               required
             />
             <textarea
               type="text"
               name="message"
-              placeholder="YOUR MESSAGE*"
+              placeholder={t("inputmessage")}
               className="inputmessage"
               required
             />

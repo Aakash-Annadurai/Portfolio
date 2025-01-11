@@ -15,37 +15,37 @@ export default function Portfolio() {
     {
       id: 1,
       src: project1,
-      description: "APOD",
+      description:t("apod"),
       link: "https://apod-boqk.onrender.com",
     },
     {
       id: 2,
       src: project2,
-      description: "Blog Preview",
+      description: t("blog"),
       link: "https://aakash-annadurai.github.io/Blog-Preview-Card/",
     },
     {
       id: 3,
       src: project3,
-      description: "Dog API Demo",
+      description: t("dogapi"),
       link: "https://dog-api-demo.onrender.com",
     },
     {
       id: 4,
       src: project4,
-      description: "Recipe Page",
+      description: t("recipe"),
       link: "https://aakash-annadurai.github.io/Recipe-Page/",
     },
     {
       id: 5,
       src: project5,
-      description: "Table Records",
+      description: t("table"),
       link: "https://table-records.onrender.com",
     },
     {
       id: 6,
       src: project6,
-      description: "To-Do List",
+      description: t("todo"),
       link: "https://to-do-list-rvb1.onrender.com",
     },
   ];

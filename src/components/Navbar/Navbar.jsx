@@ -53,7 +53,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className="btn dropdown">
-        <select onChange={handleLanguageChange} defaultValue={i18n.language}>
+        <select onChange={handleLanguageChange}>
           <option value="en">{t("engoptionbtn")}</option>
           <option value="tn">{t("tamoptionbtn")}</option>
         </select>
