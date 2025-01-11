@@ -5,9 +5,7 @@ import Swal from "sweetalert2";
 import { FunctionContext } from "../../utils/FunctionProvider";
 
 export default function Contact() {
-  const { t } = useContext(FunctionContext);
-
-export default function Contact() {
+   const { t } = useContext(FunctionContext);
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
