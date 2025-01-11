@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export const FunctionContext = createContext();
 
-function FunctionProvider({ childern }) {
+function FunctionProvider({children}) {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng); // Change the language dynamically
@@ -14,9 +14,8 @@ function FunctionProvider({ childern }) {
   }, [lang]);
 
   return (
-    <FunctionContext.Provider
-      value={{ t: t, changeLanguage: changeLanguage, setLang: setLang, lang }}>
-      {childern}
+    <FunctionContext.Provider value={{ t: t, changeLanguage: changeLanguage, setLang: setLang, lang }}>
+      {children}
     </FunctionContext.Provider>
   );
 }
