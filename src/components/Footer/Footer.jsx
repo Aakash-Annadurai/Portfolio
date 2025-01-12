@@ -43,7 +43,8 @@ export default function Footer() {
           </button>
         </div>
         <div className="copyrights">
-          <p>{t("copyrights")}</p>
+          <a href="https://www.figma.com/design/4HS9ri5oCjc9bpFPNiNOuY/Portfolio---Tomasz-Gajda-(Community)?node-id=7-4&t=ruWZCE3r8fBx1iQa-1" target="_blank" rel="noopener noreferrer"><p>{t("copyrights")}</p></a>
+          <p>{t("developedby")} <a href="http://" target="_blank" rel="noopener noreferrer">{t("footeremail")}</a></p>
         </div>
       </div>
     </>

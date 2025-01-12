@@ -50,5 +50,7 @@
   "dogapi":"Dog API Demo",
   "recipe":"Recipe Page",
   "table":"Table Records",
-  "todo":"To-Do List"
+  "todo":"To-Do List",
+  "developedby":"Developed by",
+  "footeremail":"aakashannadurai7@gmail.com"
 }

@@ -114,7 +114,7 @@ p {
   position: relative;
   width: 18.91vw;
   height: 5.83vh;
-  top: 3vh;
+  top: 5vh;
   left: 2.6vw;
 }
 
@@ -143,7 +143,7 @@ p {
   width: 7.24vw;
   height: 2.96vh;
   position: relative;
-  top: 1vh;
+  top: 0vh;
   left: 2.6vw;
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
