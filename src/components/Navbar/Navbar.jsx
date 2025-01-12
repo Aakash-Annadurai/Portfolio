@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import "./navbar.css";
 import { useEffect, useState } from "react";
 import { FunctionContext } from "../../utils/FunctionProvider";
+import menuIcon from "./assets/svg/Group8.svg"
+import crossIcon from "./assets/svg/Group.svg"
 
 export default function Navbar() {
   const { t, setLang, i18n } = useContext(FunctionContext);
@@ -9,7 +11,7 @@ export default function Navbar() {
     setLang(e.target.value);
   };
   const [isSticky, setIsSticky] = useState(false);
-
+  const [menu,setmenu]=useState(false)
   const scrollScreenTo = (divId) => {
     const div = document.getElementById(divId);
     if (div) {
@@ -31,8 +33,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`Navbar ${isSticky ? "sticky" : ""}`}>
-      <div className="btn aboutme">
+    <div className={`Navbar ${menu?"mobileMenu":""} ${isSticky ? "sticky" : ""}`}>
+       <div onClick={()=>setmenu(!menu)} className="closeIcon">
+        <img src={crossIcon}>
+
+        </img>
+      </div>
+      <div className="btn  aboutme">
         <button onClick={() => scrollScreenTo("aboutMe")}>
           {t("aboutmebtn")}
         </button>
@@ -57,6 +64,11 @@ export default function Navbar() {
           <option value="en">{t("engoptionbtn")}</option>
           <option value="tn">{t("tamoptionbtn")}</option>
         </select>
+      </div>
+      <div onClick={()=>setmenu(!menu)} className="menuIcon">
+        <img src={menuIcon}>
+
+        </img>
       </div>
     </div>
   );

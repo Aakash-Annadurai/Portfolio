@@ -152,3 +152,12 @@ p {
   font-size: 0.78vw;
   font-weight: 500;
 }
+
+
+@media (max-width: 430px) {
+.Hero{
+  background-image: url(./assets/Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
