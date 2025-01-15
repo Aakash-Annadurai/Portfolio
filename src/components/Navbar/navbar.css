@@ -12,11 +12,19 @@
   box-sizing: border-box;
 }
 
+.menuIcon {
+  display: none;
+}
+
+.closeIcon {
+  display: none;
+}
+
 .Navbar.sticky {
   position: fixed;
   top: 0px;
   left: 0px;
-  height: 6.94vh;
+  height: auto;
   width: 100vw;
   max-height: none;
   max-width: none;
@@ -25,7 +33,6 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 4.17vw;
   padding-right: 5.21vw;
   box-sizing: border-box;
 }
@@ -62,18 +69,90 @@ button {
   border: 0.21vw;
 }
 
-.dropdown > select{
+.dropdown > select {
   font-family: "Montserrat", serif;
   background-color: var(--secondary-font-color);
   color: var(--primary-font-color);
-  font-size: 0.78vw;
+  font-size: 0.7vw;
   font-weight: 700;
   line-height: 1.69vh;
-  width: 4.8vw;
+  width: 6vw;
   height: 4.26vh;
-  border-radius: 1.56vw;
+  border-radius: 1.5vw;
   border: 0.21vw;
   text-align: center;
   cursor: pointer;
 }
 
+@media (max-width: 430px) {
+  .Navbar {
+    top: 0;
+    left: 0;
+    background-color: var(--primary-font-color);
+    width: 100vw;
+    height: 8vh;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-end;
+    transition: 0.3s ease-in-out;
+    position: sticky;
+  }
+  .btn > button {
+    padding: 0;
+    font-size: 2.5vw;
+    font-weight: 400;
+    border-radius: 0;
+    height: 6vh;
+    width: 100vw;
+  }
+  .menuIcon {
+    display: contents;
+    background-color: black;
+    height: auto;
+  }
+  .btn {
+    display: none;
+  }
+  .Navbar.showMenu {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+  }
+  .Navbar.sticky.showMenu {
+    position: fixed;
+  }
+  .showMenu > .btn {
+    background-color: black;
+    display: contents;
+  }
+  .showMenu > .menuIcon {
+    background-color: black;
+    display: none;
+  }
+  .showMenu > .closeIcon {
+    display: contents;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: auto;
+    border-bottom: 1px solid #ffffff;
+    background-color: black;
+  }
+  .dropdown > select {
+    height: 6vh;
+    width: 100vw;
+    border-radius: 0;
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
+}

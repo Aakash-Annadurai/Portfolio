@@ -45,10 +45,35 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
 .footericon {
   width: 2vw;
+}
+
+@media (max-width: 430px) {
+  .Footer {
+    top: 100vh;
+    height: 35.6vh;
+    gap: 3.5vh;
+  }
+  .backtotop {
+    gap: 3vw;
+    font-size: 4vw;
+  }
+  .contacticons > button {
+    gap: 5vw;
+    width: 100vw;
+    height: 8vh;
+    filter: invert(100%);
+  }
+  .footericon {
+    width: 6vw;
+  }
+  .copyrights {
+    font-size: 3vw;
+    gap: 2vh;
+  }
 }

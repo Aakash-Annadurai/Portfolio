@@ -3,6 +3,7 @@ import { FunctionContext } from "../../utils/FunctionProvider";
 import Navbar from "../Navbar/Navbar";
 import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
+import seperator from "./assets/separator.png";
 import "./hero.css";
 
 export default function Hero() {
@@ -14,6 +15,15 @@ export default function Hero() {
         <p className="intro">{t("greetings")}</p>
         <p className="name">{t("name")}</p>
         <p className="role">{t("role")}</p>
+      </div>
+      <div className="mobileview">
+        <p className="mobileviewintro">{t("mobileviewintro")}</p>
+        <p className="mobileviewrole">{t("mobileviewrole")}</p>
+        <img
+          src={seperator}
+          alt="divider icon"
+          className="separatormobileview"
+        />
       </div>
       <div className="iconbtn">
         <button

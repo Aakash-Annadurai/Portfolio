@@ -15,7 +15,7 @@ export default function Portfolio() {
     {
       id: 1,
       src: project1,
-      description:t("apod"),
+      description: t("apod"),
       link: "https://apod-boqk.onrender.com",
     },
     {

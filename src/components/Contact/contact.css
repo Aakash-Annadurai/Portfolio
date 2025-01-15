@@ -105,9 +105,69 @@ input {
   font-weight: 700;
   line-height: 1.81vh;
   letter-spacing: 0.08vw;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border-left: 0.37vh solid black;
+  border-right: 0.37vh solid black;
   text-align: center;
   color: var(--primary-font-color);
   cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  .Contact {
+    top: 90vh;
+    height: 118.2vh;
+  }
+  .header {
+    width: 40vw;
+    height: 8vh;
+    border: 2.13vw solid #000000;
+  }
+  .header > p {
+    width: 40vw;
+    height: 8vh;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 3.55vh;
+    letter-spacing: 1vw;
+  }
+  .contactinfo > p {
+    width: 85.47vw;
+    height: 7.76vh;
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin-top: 6vw;
+    line-height: 3.93vh;
+  }
+  .contactseparator {
+    position: relative;
+    top: 4vh;
+    width: 120px;
+    height: 10px;
+  }
+  form {
+    height: 90vh;
+    gap: 20vh;
+  }
+  .inputfields {
+    top: 11vh;
+    gap: 8vh;
+  }
+  input {
+    width: 64.8vw;
+    height: 5.3vh;
+    padding-left: 2.52vw;
+    font-size: 3.2vw;
+    font-weight: 600;
+  }
+  .inputmessage {
+    width: 64.8vw;
+    height: 20vh;
+    font-size: 3.2vw;
+    font-weight: 600;
+    padding-left: 2.52vw;
+  }
+  .btn.submit {
+    display: contents;
+    font-size: 4vw;
+  }
 }

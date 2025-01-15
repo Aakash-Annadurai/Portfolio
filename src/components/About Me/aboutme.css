@@ -315,3 +315,177 @@
   text-align: center;
   color: var(--primary-font-color);
 }
+
+@media (max-width: 430px) {
+  .Aboutme {
+    top: 55vh;
+    height: 136vh;
+  }
+  .header {
+    width: 40vw;
+    height: 8vh;
+    border: 2.13vw solid #000000;
+  }
+  .header > p {
+    width: 40vw;
+    height: 8vh;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 3.55vh;
+    letter-spacing: 1vw;
+  }
+  .explore {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30.07vw;
+    height: 3.94vh;
+    top: 24vh;
+    left: 0;
+    font-size: 3vw;
+    line-height: 3.93vh;
+  }
+  .infoaboutme {
+    height: 14.78vh;
+    top: 6vh;
+    width: 55vw;
+    font-family: "Open Sans", serif;
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 3vh;
+    text-align: justify;
+  }
+  .separator1 {
+    top: 30vh;
+  }
+  .separator2 {
+    top: 57vh;
+  }
+  .separator1,
+  .separator2 {
+    width: 120px;
+    height: 10px;
+  }
+  .services {
+    height: 60.2vh;
+    width: 70vw;
+    top: 42vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+  .designanddevelopment {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+  .design {
+    width: 74.93vw;
+    height: 18.6vh;
+    justify-content: center;
+  }
+  .design > .info {
+    width: 70vw;
+    font-size: 3.47vw;
+    line-height: 2.77vh;
+    top: 2vh;
+  }
+  .design > .title {
+    width: 24vw;
+    font-size: 4.53vw;
+    justify-content: left;
+  }
+  .design > img {
+    width: 12vw;
+    height: 12vh;
+    top: 4vh;
+    left: -4vw;
+  }
+  .development {
+    width: 74.93vw;
+    height: 18.6vh;
+    justify-content: center;
+  }
+  .development > .info {
+    width: 70vw;
+    font-size: 3.47vw;
+    line-height: 2.77vh;
+    top: 2vh;
+  }
+  .development > .title {
+    width: 44vw;
+    font-size: 4.53vw;
+    justify-content: left;
+  }
+  .development > img {
+    width: 12vw;
+    height: 12vh;
+    top: 4vh;
+    left: -4vw;
+  }
+  .maintenance {
+    width: 74.93vw;
+    height: 18.6vh;
+    justify-content: center;
+  }
+  .maintenance > .info {
+    width: 70vw;
+    font-size: 3.47vw;
+    line-height: 2.77vh;
+    top: 2vh;
+  }
+  .maintenance > .title {
+    width: 44vw;
+    font-size: 4.53vw;
+    justify-content: left;
+  }
+  .maintenance > img {
+    width: 12vw;
+    height: 12vh;
+    top: 4vh;
+    left: -4vw;
+  }
+  .Skills {
+    top: 90vh;
+    height: 136vh;
+    gap: 7.78vh;
+  }
+  .usingnow > p {
+    margin-top: 1vh;
+    font-size: clamp(10px, 8vw, 20px);
+    text-align: center;
+    gap: 7vh;
+  }
+  .usinglist {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 6.51vw;
+  }
+  .skillsused {
+    width: 100vw;
+    max-height: 95.83vh;
+    overflow-y: auto;
+  }
+  .learning > p {
+    font-size: clamp(10px, 8vw, 20px);
+    text-align: center;
+    gap: 7vh;
+    padding-bottom: 1vh;
+  }
+  .learninglist {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 6.51vw;
+  }
+  .logo {
+    gap: 5vh;
+  }
+  .logo > img {
+    width: 20vw;
+  }
+  .logo > p {
+    font-size: 6vw;
+  }
+}

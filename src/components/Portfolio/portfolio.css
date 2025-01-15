@@ -144,3 +144,50 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 430px) {
+  .Portfolio {
+    top: 85vh;
+  }
+  .header {
+    width: 40vw;
+    height: 8vh;
+    border: 2.13vw solid #000000;
+  }
+  .header > p {
+    width: 40vw;
+    height: 8vh;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 3.55vh;
+    letter-spacing: 1vw;
+  }
+  .projectgrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container {
+    width: 100vw;
+    height: 28vh;
+  }
+  .image-container > img {
+    width: 100vw;
+    height: 28vh;
+  }
+  .hover-text {
+    top: -20vh;
+    left: 30vw;
+    font-size: 6vw;
+  }
+  .box {
+    width: 7.77vw;
+    height: 4.44vh;
+    font-size: 3.04vw;
+    border-bottom: 0.3vh solid #aaaaaa;
+  }
+  .portfoliofooter {
+    font-size: 3.04vw;
+  }
+}

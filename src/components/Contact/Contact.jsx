@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import { FunctionContext } from "../../utils/FunctionProvider";
 
 export default function Contact() {
-   const { t } = useContext(FunctionContext);
+  const { t } = useContext(FunctionContext);
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -48,7 +48,7 @@ export default function Contact() {
         <div className="contactinfo">
           <p>{t("contactinfo")}</p>
         </div>
-        <img src={separator} alt="separator" />
+        <img src={separator} alt="separator" c className="contactseparator" />
         <form onSubmit={onSubmit}>
           <div className="inputfields">
             <input
@@ -70,7 +70,6 @@ export default function Contact() {
               name="phone number"
               placeholder={t("inputnumber")}
               className="inputphonenumber"
-              required
             />
             <textarea
               type="text"
@@ -80,7 +79,9 @@ export default function Contact() {
               required
             />
           </div>
-          <button className="btn submit" type="submit">{t("submitbtn")}</button>
+          <button className="btn submit" type="submit">
+            {t("submitbtn")}
+          </button>
         </form>
       </div>
     </>

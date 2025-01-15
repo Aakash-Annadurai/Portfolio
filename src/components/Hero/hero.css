@@ -4,6 +4,7 @@
   background-image: url(./assets/Rectanglebg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 p {
@@ -151,4 +152,114 @@ p {
   font-family: "Montserrat", serif;
   font-size: 0.78vw;
   font-weight: 500;
+}
+
+.mobileview {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .Hero {
+    background-image: url(./assets/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .TitleIntro {
+    display: none;
+  }
+  .mobileview {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+  }
+  .mobileviewintro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: "Advent Pro", serif;
+    font-size: clamp(10px, 6vw, 20px);
+  }
+  .mobileviewrole {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: "Montserrat", serif;
+    font-size: clamp(10px, 8vw, 22px);
+    font-weight: 600;
+  }
+  .iconbtn {
+    top: 45vh;
+    left: 40vw;
+    width: 20vw;
+    height: 15vh;
+  }
+  .iconbtn > button {
+    background: none;
+    box-shadow: none;
+    width: 20vw;
+    height: 5vh;
+  }
+  button > img {
+    filter: invert(100%);
+  }
+  .githubicon {
+    width: 6vw;
+    height: 6vh;
+  }
+  .linkedinicon {
+    width: 6vw;
+    height: 6vh;
+  }
+  .separatormobileview {
+    width: 120px;
+    height: 10px;
+    filter: invert(100%);
+  }
+  .HeroFooter {
+    top: 89vh;
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+  }
+  .Objective > p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7.76vh;
+    top: -5vh;
+    left: 0;
+    font-size: 6.67vw;
+  }
+  .ObjectiveInfo > p {
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 7.76vh;
+    top: 0;
+    left: 0;
+    font-size: clamp(5px, 3vw, 22px);
+    line-height: 3.93vh;
+  }
+  .ReadMore {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30.07vw;
+    height: 3.94vh;
+    top: 10vh;
+    left: 0;
+    font-size: 3vw;
+    line-height: 3.93vh;
+  }
 }
