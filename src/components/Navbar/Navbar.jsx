@@ -66,6 +66,12 @@ export default function Navbar() {
           <option value="tn">{t("tamoptionbtn")}</option>
         </select>
       </div>
+      <div className="btn dropdownmobile">
+        <select onChange={handleLanguageChange}>
+          <option value="en">{t("engoptionbtn")}</option>
+          <option value="tn">{t("tamoptionbtn")}</option>
+        </select>
+      </div>
       <div className="menuIcon" onClick={() => setMenu(!menu)}>
         <img src={menuIcon} alt="menu icon" />
       </div>

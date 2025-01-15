@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
 import seperator from "./assets/separator.png";
+import aakash from './assets/aakash.jpg'
 import "./hero.css";
 
 export default function Hero() {
@@ -44,6 +45,7 @@ export default function Hero() {
           <img src={linkedin} className="linkedinicon" alt="linkedin" />
         </button>
       </div>
+      <img src={aakash} alt="profile photo" className="profilephoto" />
       <div className="HeroFooter">
         <div className="Objective">
           <p>{t("objectivetitle")}</p>

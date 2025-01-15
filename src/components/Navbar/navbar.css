@@ -8,8 +8,12 @@
   gap: 1.8vw;
   top: 6.02vh;
   left: 50vw;
-  transition: all 0.3s ease-in-out;
+  transition: height 0.1s linear forwards;
   box-sizing: border-box;
+}
+
+.dropdownmobile{
+  display: none;
 }
 
 .menuIcon {
@@ -92,10 +96,14 @@ button {
     width: 100vw;
     height: 8vh;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    justify-content: flex-end;
-    transition: 0.3s ease-in-out;
+    transition: height 0.1s linear forwards;
     position: sticky;
+  }
+  .Navbar.sticky{
+    justify-content: space-between;
+    padding: 20px;
   }
   .btn > button {
     padding: 0;
@@ -104,6 +112,26 @@ button {
     border-radius: 0;
     height: 6vh;
     width: 100vw;
+  }
+  .btn.dropdown > select{
+    display: none;
+  }
+  .btn.dropdownmobile{
+    display: block;
+  }
+  .btn.dropdownmobile > select {
+    font-family: "Montserrat", serif;
+    background-color: var(--secondary-font-color);
+    color: var(--primary-font-color);
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 1.69vh;
+    width: 15vw;
+    height: 4.26vh;
+    border-radius: 1.5vw;
+    border: 0.21vw;
+    text-align: center;
+    cursor: pointer;
   }
   .menuIcon {
     display: contents;
@@ -124,13 +152,17 @@ button {
     z-index: 3;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0;
+    transition: height 0.1s linear forwards;
+    animation: expandHeight 0.1s linear forwards;
   }
   .Navbar.sticky.showMenu {
     position: fixed;
     height: auto;
   }
+  .showMenu > .btn.dropdownmobile{
+    display: none;
+  }
   .showMenu > .btn {
-    background-color: black;
     display: contents;
   }
   .showMenu > .menuIcon {
@@ -144,7 +176,7 @@ button {
     justify-content: end;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 13px;
     height: auto;
     border-bottom: 1px solid #ffffff;
     background-color: black;
@@ -155,5 +187,14 @@ button {
     border-radius: 0;
     font-size: 2.5vw;
     font-weight: 500;
+  }
+}
+
+@keyframes expandHeight {
+  from {
+    height: 30vh;
+  }
+  to {
+    height: auto;
   }
 }
