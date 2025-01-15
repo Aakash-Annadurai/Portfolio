@@ -8,7 +8,7 @@
   gap: 1.8vw;
   top: 6.02vh;
   left: 52vw;
-  transition: all 0.3s ease-in-out;
+  transition:  0.1s  linear forwards;
   box-sizing: border-box;
 }
 .menuIcon{
@@ -98,17 +98,27 @@ button {
     align-items:center ;
     padding: 20px;
     justify-content: flex-end;
-    transition: all 0.3s ease-in-out;
    position: absolute;
   }
   .Navbar.mobileMenu{
     background-color: rgba(0, 0, 0, 0.5);
    flex-direction: column;
    align-items: center;
-   padding: 0;
+   /* height: 20vh; */
    height: auto;
+   padding: 0;
    z-index: 2;
- 
+   transition: height 0.1s  linear forwards ;
+   animation: expandHeight 0.1s linear forwards ; 
+
+  }
+  @keyframes expandHeight {
+    from {
+      height: 20vh;
+    }
+    to {
+      height: auto;
+    }
   }
   .Navbar.mobileMenu div{
 display: contents;
