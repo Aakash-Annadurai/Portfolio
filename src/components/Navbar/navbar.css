@@ -7,7 +7,7 @@
   position: relative;
   gap: 1.8vw;
   top: 6.02vh;
-  left: 52vw;
+  left: 50vw;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
 }
@@ -24,7 +24,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  height: auto;
+  height: 8vh;
   width: 100vw;
   max-height: none;
   max-width: none;
@@ -127,6 +127,7 @@ button {
   }
   .Navbar.sticky.showMenu {
     position: fixed;
+    height: auto;
   }
   .showMenu > .btn {
     background-color: black;

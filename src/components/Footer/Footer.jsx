@@ -24,7 +24,7 @@ export default function Footer() {
           <button
             onClick={() =>
               window.open(
-                "www.linkedin.com/in/aakash-annadurai-8516b5321",
+                "https://linkedin.com/in/aakash-annadurai-8516b5321",
                 "_blank"
               )
             }
