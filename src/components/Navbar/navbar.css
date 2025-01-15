@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-.dropdownmobile{
+.dropdownmobile {
   display: none;
 }
 
@@ -101,7 +101,7 @@ button {
     transition: height 0.1s linear forwards;
     position: sticky;
   }
-  .Navbar.sticky{
+  .Navbar.sticky {
     justify-content: space-between;
     padding: 20px;
   }
@@ -113,10 +113,10 @@ button {
     height: 6vh;
     width: 100vw;
   }
-  .btn.dropdown > select{
+  .btn.dropdown > select {
     display: none;
   }
-  .btn.dropdownmobile{
+  .btn.dropdownmobile {
     display: block;
   }
   .btn.dropdownmobile > select {
@@ -159,7 +159,7 @@ button {
     position: fixed;
     height: auto;
   }
-  .showMenu > .btn.dropdownmobile{
+  .showMenu > .btn.dropdownmobile {
     display: none;
   }
   .showMenu > .btn {

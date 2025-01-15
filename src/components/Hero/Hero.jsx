@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
 import seperator from "./assets/separator.png";
-import aakash from './assets/aakash.jpg'
+import aakash from "./assets/aakash.jpg";
 import "./hero.css";
 
 export default function Hero() {

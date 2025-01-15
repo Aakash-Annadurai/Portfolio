@@ -89,8 +89,8 @@ p {
   height: 4vh;
 }
 
-.profilephoto{
-  position:absolute;
+.profilephoto {
+  position: absolute;
   z-index: 2;
   height: 60vh;
   top: 150px;
@@ -176,7 +176,7 @@ p {
     background-size: cover;
     background-position: center;
   }
-  .profilephoto{
+  .profilephoto {
     display: none;
   }
   .TitleIntro {
